@@ -1,28 +1,94 @@
-*{
-    padding: 0;
-    margin: 0;
+* {
+	padding: 0;
+	margin: 0;
 }
-:root{
-    --Lightred: hsl(0, 100%, 67%);
-    --Orangeyyellow: hsl(39, 100%, 56%);
-    --Greenteal: hsl(166, 100%, 37%);
-    --Cobaltblue: hsl(234, 85%, 45%);
-    --Lightslateblue: hsl(252, 100%, 67%);
-    --Lightroyalblue: hsl(241, 81%, 54%);
-    --Violetblue: hsla(256, 72%, 46%, 1);
-    --Persianblue: hsla(241, 72%, 46%, 0);
-    --White: hsl(0, 0%, 100%);
-    --Paleblue: hsl(221, 100%, 96%);
-    --Lightlavender: hsl(241, 100%, 89%);
-    --Darkgrayblue: hsl(224, 30%, 27%);
+@font-face {
+	font-family: "hanken";
+	src: url(/assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
 }
-.container{
-    width: 100%;
-    height: 100vh;
-    background-color: var(--White);
+:root {
+	--Lightred: hsl(0, 100%, 67%);
+	--Orangeyyellow: hsl(39, 100%, 56%);
+	--Greenteal: hsl(166, 100%, 37%);
+	--Cobaltblue: hsl(234, 85%, 45%);
+	--Lightslateblue: hsl(252, 100%, 67%);
+	--Lightroyalblue: hsl(241, 81%, 54%);
+	--Violetblue: hsla(256, 72%, 46%, 1);
+	--Persianblue: hsla(241, 72%, 46%, 0);
+	--White: hsl(0, 0%, 100%);
+	--Paleblue: hsl(221, 100%, 96%);
+	--Lightlavender: hsl(241, 100%, 89%);
+	--Darkgrayblue: hsl(224, 30%, 27%);
+}
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100vh;
+}
+section {
+	display: flex;
+}
+.left {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	width: 50%;
+    background: linear-gradient(to top,
+    var(--Lightroyalblue),
+    var(--Lightslateblue));
+    border-radius: 25px;
+    font-family: hanken;
+    color: var(--White);
+    padding-top: 20px;
+}
+.left h3{
+padding-top: 5px;
+padding-bottom: 30px;
+opacity: 0.9;
+}
+.left h5{
+    padding-top: 20px;
+    font-size: 150%;
+}
+.left .pl1 {
+	text-align: center;
+	width: 80%;
+    padding-top: 10px;
+}
+.left .pl1 p {
+	font-size: 16px;
+    font-weight: 500;
+    opacity: 0.8;
+}
+.left .circle{
+    border-radius: 90px;
+    padding: 25px;
+    width: 33%;
+    background: linear-gradient(to top,
+    var(--Persianblue),
+    var(--Violetblue));
+}
+.left .circle h4{
+    font-size: 350%;
+}
+.left .circle p{
+    opacity: 0.5;
+}
+.right {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+.reaction,.memory,.verbal,.visual{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    gap: 30px;
 }
-.container .middle{
+.reaction-icon,
+.memory-icon,
+.verbal-icon,
+.visual-icon{
+    display: flex;
 }
