@@ -7,10 +7,25 @@
 	src: url(/assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
 }
 :root {
-	--Lightred: hsl(0, 100%, 67%);
-	--Orangeyyellow: hsl(39, 100%, 56%);
-	--Greenteal: hsl(166, 100%, 37%);
-	--Cobaltblue: hsl(234, 85%, 45%);
+	--Lightred: hsla(0, 100%, 67%, 0.071);
+	--Orangeyyellow: hsla(
+		39,
+		100%,
+		56%,
+		0.071
+	);
+	--Greenteal: hsla(
+		166,
+		100%,
+		37%,
+		0.071
+	);
+	--Cobaltblue: hsl(
+		234,
+		85%,
+		45%,
+		0.071
+	);
 	--Lightslateblue: hsl(252, 100%, 67%);
 	--Lightroyalblue: hsl(241, 81%, 54%);
 	--Violetblue: hsla(256, 72%, 46%, 1);
@@ -29,66 +44,146 @@
 }
 section {
 	display: flex;
+	background-color: var(--White);
 }
 .left {
 	display: flex;
 	flex-direction: column;
 	text-align: center;
 	align-items: center;
-	width: 50%;
-    background: linear-gradient(to top,
-    var(--Lightroyalblue),
-    var(--Lightslateblue));
-    border-radius: 25px;
-    font-family: hanken;
-    color: var(--White);
-    padding-top: 20px;
+	width: 43%;
+	background: linear-gradient(
+		to top,
+		var(--Lightroyalblue),
+		var(--Lightslateblue)
+	);
+	border-radius: 25px;
+	font-family: hanken;
+	color: var(--White);
+	padding-top: 20px;
 }
-.left h3{
-padding-top: 5px;
-padding-bottom: 30px;
-opacity: 0.9;
+.left h3 {
+	padding-top: 5px;
+	padding-bottom: 30px;
+	opacity: 0.9;
 }
-.left h5{
-    padding-top: 20px;
-    font-size: 150%;
+.left h5 {
+	padding-top: 20px;
+	font-size: 150%;
 }
 .left .pl1 {
 	text-align: center;
-	width: 80%;
-    padding-top: 10px;
+	width: 75%;
+	padding-top: 10px;
+	padding-bottom: 30px;
 }
 .left .pl1 p {
 	font-size: 16px;
-    font-weight: 500;
-    opacity: 0.8;
+	font-weight: 500;
+	opacity: 0.8;
 }
-.left .circle{
-    border-radius: 90px;
-    padding: 25px;
-    width: 33%;
-    background: linear-gradient(to top,
-    var(--Persianblue),
-    var(--Violetblue));
+.left .circle {
+	border-radius: 90px;
+	padding: 25px;
+	width: 28%;
+	background: linear-gradient(
+		to top,
+		var(--Persianblue),
+		var(--Violetblue)
+	);
 }
-.left .circle h4{
-    font-size: 350%;
+.left .circle h4 {
+	font-size: 350%;
 }
-.left .circle p{
-    opacity: 0.5;
+.left .circle p {
+	margin-top: -10px;
+	opacity: 0.5;
 }
 .right {
 	display: flex;
 	flex-direction: column;
-	text-align: center;
+	padding-left: 10px;
+	width: 40%;
+	gap: 16px;
+	align-items: center;
+	padding-top: 20px;
+	font-family: hanken;
+	font-weight: 500;
+	border-radius: 0px 0px 16px 0px;
+	box-shadow: 5px 4px 4px
+		rgba(0, 0, 0, 0.144);
+	border-left: none;
 }
-.reaction,.memory,.verbal,.visual{
-    display: flex;
-    gap: 30px;
+.right .title{
+    width: 70%;
+    text-align: left;
+}
+.right .title h5 {
+	font-size: 130%;
+}
+.right .react {
+	color: hsl(0, 100%, 67%);
+}
+.right .memo {
+	color: hsl(39, 100%, 56%);
+}
+.right .verb {
+	color: hsl(166, 100%, 37%);
+}
+.right .visu {
+	color: hsl(234, 85%, 45%);
+}
+.right .spa {
+	font-weight: 600;
+}
+.right .spa2 {
+	color: var(--Darkgrayblue);
+	font-weight: 700;
+	opacity: 0.5;
+}
+.reaction,
+.memory,
+.verbal,
+.visual {
+	display: flex;
+	justify-content: space-between;
+	width: 70%;
+	padding: 10px;
+	border-radius: 8px;
+}
+.reaction {
+	background-color: var(--Lightred);
+}
+.memory {
+	background-color: var(
+		--Orangeyyellow
+	);
+}
+.verbal {
+	background-color: var(--Greenteal);
+}
+.visual {
+	background-color: var(--Cobaltblue);
 }
 .reaction-icon,
 .memory-icon,
 .verbal-icon,
-.visual-icon{
-    display: flex;
+.visual-icon {
+	display: flex;
+	gap: 10px;
+}
+.right button {
+	background-color: var(--Darkgrayblue);
+	width: 80%;
+	border: none;
+	padding: 12px;
+	border-radius: 18px;
+	color: var(--Paleblue);
+	font-weight: 700;
+	cursor:pointer;
+}
+@media only screen and (min-width:425px){
+section{
+	flex-wrap: wrap;
+}
 }
