@@ -123,6 +123,14 @@ section {
 .right .title h5 {
 	font-size: 130%;
 }
+.right #output {
+	width: 100%;
+	border: 2px solid red;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+}
 .right .react {
 	color: hsl(0, 100%, 67%);
 }
@@ -184,9 +192,7 @@ section {
 	font-weight: 700;
 	cursor: pointer;
 }
-@media only screen and (min-width:320px){
-	
+@media only screen and (min-width: 320px) {
 }
-@media only screen and (min-width:320px){
-
+@media only screen and (min-width: 320px) {
 }
