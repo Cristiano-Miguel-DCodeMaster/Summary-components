@@ -184,4 +184,9 @@ section {
 	font-weight: 700;
 	cursor: pointer;
 }
-@media 
+@media only screen and (min-width:320px){
+	
+}
+@media only screen and (min-width:320px){
+
+}
