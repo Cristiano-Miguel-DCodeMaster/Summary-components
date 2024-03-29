@@ -125,7 +125,6 @@ section {
 }
 .right #output {
 	width: 100%;
-	border: 2px solid red;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -192,7 +191,169 @@ section {
 	font-weight: 700;
 	cursor: pointer;
 }
-@media only screen and (min-width: 320px) {
+@media only screen and (min-width:320px) {
+	section{
+		flex-direction: column;
+		width: 100%;
+		height: 150vh;
+	}
+	.left {
+		width: 100%;
+		height: 50vh;
+		justify-content: center;
+		padding-top: 55%;
+		border-radius: 0px 0px 34px 34px;
+	}
+	.left h3 {
+		padding-bottom: 30px;
+		opacity: 0.9;
+		padding-top: 20px;
+	}
+	.left h5 {
+		padding-top: 20px;
+	}
+	.left .pl1 {
+		text-align: center;
+		width: 80%;
+		padding-top: 7px;
+		padding-bottom: 20%;
+	}
+	.left .pl1 p {
+		font-size: 16px;
+		opacity: 0.7;
+	}
+	.left .circle {
+		border-radius: 90px;
+		width: 28%;
+		padding: 20px;
+	}
+	.left .circle h4 {
+		font-size: 350%;
+	}
+	.right {
+		width: 100%;
+		height: 80vh;
+	}
+	.right .title h5 {
+		font-size: 110%;
+		padding-top: 20px;
+	}
+	.right #output {
+		width: 100%;
+	}
+	.right .spa {
+		font-weight: 600;
+	}
+	.right .spa2 {
+		color: var(--Darkgrayblue);
+		font-weight: 700;
+		opacity: 0.5;
+	}
+	.right button {
+		width: 75%;
+		border-radius: 24px;
+		font-size: 16px;
+	}
 }
-@media only screen and (min-width: 320px) {
+@media only screen and (min-width:375px){
+	section{
+		height: 156vh;
+	}
+	.left .circle {
+		width: 25%;
+		padding: 20px;
+	}
+	.left .pl1 {
+		width: 70%;
+	}
+}
+@media only screen and (min-width:375px) and (min-height:800px){
+	section{
+		height: 100vh;
+	}
+	.left{
+		height: 50vh;
+		padding: 0;
+	}
+	.left .pl1 {
+		padding-bottom: 0;
+	}
+	.right{
+		height: 50vh;
+	}
+}
+@media only screen and (min-width:768px){
+	section{
+		height: 140vh;
+	}
+	.left{
+		height: 50vh;
+		padding-top: 50px;
+	}
+	.left .circle {
+		width: 25%;
+		padding: 20px;
+	}
+	.left .pl1 {
+		padding-bottom: 40px;
+	}
+	.right{
+		height: 50vh;
+	}
+}
+@media only screen and (min-width:992px){
+	section{
+		height: 100vh;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		width: 60%;
+		height: 67.2vh;
+	}
+	.left{
+		height: 67vh;
+		padding-top: 0;
+		border-radius:30px;
+	}
+	.left h3 {
+		padding-bottom: 15px;
+	}
+	.left .circle {
+		width: 30%;
+		padding: 40px;
+	}
+	.left .pl1 {
+		padding-bottom: 40px;
+		width: 75%;
+	}
+	.right{
+		height: 58vh;
+	}
+	.right .title h5 {
+		padding-top: 0;
+	}
+}
+@media only screen and (min-width:1200px){
+	.left h3{
+		padding-bottom: 30px;
+	}
+	.left .circle {
+		width: 25%;
+	}
+	.left .pl1 {
+		padding-bottom: 0px;
+		width: 60%;
+	}
+	
+	.right{
+		height:53vh;
+	}
+}
+@media only screen and (min-width:1400px){
+	.left .circle {
+		width: 22%;
+	}
+	.left .pl1 {
+		width: 50%;
+	}
 }
