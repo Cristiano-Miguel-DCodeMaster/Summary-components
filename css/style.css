@@ -261,7 +261,7 @@ section {
 	}
 	.left .circle {
 		width: 25%;
-		padding: 20px;
+		padding: 22px;
 	}
 	.left .pl1 {
 		width: 70%;
@@ -280,6 +280,12 @@ section {
 	}
 	.right{
 		height: 50vh;
+	}
+}
+@media screen and (min-width:412px){
+	.left .circle{
+		width: 20%;
+		padding: 40px;
 	}
 }
 @media only screen and (min-width:768px){
